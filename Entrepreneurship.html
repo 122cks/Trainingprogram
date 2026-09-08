@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학생 대상 진로 캠프 프로그램 제안서 - 청소년 창업가정신 실전 캠프</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Pretendard & Inter -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    body {
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #ffffff;
+        padding: 0;
+      }
+      .page-container {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen py-6 px-3 sm:px-6 md:py-10 flex flex-col items-center">
+
+  <!-- 상단 액션 내비게이션 바 (화면 상단 고정/툴바 스타일) -->
+  <header class="w-full max-w-5xl mb-6 flex flex-col sm:flex-row items-center justify-between gap-4 px-2 no-print">
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20 text-lg font-bold">
+        🚀
+      </div>
+      <div>
+        <span class="text-xs font-semibold tracking-wide text-blue-600 uppercase block">2026 진로 연계 맞춤형 프로그램</span>
+        <h1 class="text-lg font-bold text-slate-900 leading-tight">학생 대상 진로 캠프 프로그램 제안서</h1>
+      </div>
+    </div>
+    <div class="flex items-center gap-2.5 w-full sm:w-auto justify-end">
+      <button 
+        onclick="openShareModal()" 
+        class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 text-slate-700 text-sm font-semibold rounded-xl shadow-sm transition-all duration-200">
+        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+        메신저 공유 문구
+      </button>
+      <button 
+        onclick="window.print()" 
+        class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold rounded-xl shadow-md transition-all duration-200">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+        </svg>
+        공문 인쇄 / PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- 메인 흰색 컨테이너 (사용자 제시 스타일 1:1 완벽 구현) -->
+  <main class="page-container w-full max-w-5xl bg-white border border-slate-200/90 rounded-2xl shadow-xl shadow-slate-200/40 p-6 sm:p-10 space-y-10">
+
+    <!-- 상단 히어로 배너 & 핵심 개요 카드 -->
+    <section class="border-b border-slate-100 pb-10">
+      <div class="border-t-4 border-blue-600 rounded-t-xl -mt-6 sm:-mt-10 -mx-6 sm:-mx-10 mb-8"></div>
+      
+      <!-- 상단 배지 리스트 -->
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-lg shadow-sm">학생 대상 진로 캠프</span>
+        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-lg border border-blue-200/80">전국 중·고등학생</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg border border-slate-200">2022 개정 교육과정 연계</span>
+        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-lg border border-emerald-200/80">실습·프로젝트형 워크숍</span>
+        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-lg border border-indigo-200/80">씨마스 워크북 공식 프로세스</span>
+      </div>
+
+      <!-- 메인 헤드라인 -->
+      <div class="space-y-1.5 mb-3">
+        <span class="text-xs sm:text-sm font-bold tracking-wider text-blue-600 uppercase block">2026학년도 학교 맞춤형 교육 제안</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
+          학생 대상 진로 캠프 프로그램 제안서
+        </h2>
+        <p class="text-lg sm:text-xl font-bold text-slate-700 pt-0.5">
+          청소년 창업가정신 실전 캠프: 생활 속 혁신 프로젝트
+        </p>
+      </div>
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
+        일상의 불편함을 새로운 시각으로 발견하고, 트리즈(TRIZ) 역발상과 최소기능제품(MVP) 프로토타입을 거쳐 모의 투자 설명회(IR 피칭)까지 완주하는 학생 주도형 실전 스타트업 캠프입니다.
+      </p>
+
+      <!-- 핵심 운영 요약 4대 카드 그리드 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <div class="bg-slate-50/80 border border-slate-200/70 p-4 rounded-xl">
+          <span class="text-xs font-medium text-slate-500 block mb-1">참가 대상</span>
+          <p class="text-base font-bold text-slate-900">전국 중·고등학생</p>
+          <span class="text-xs text-slate-500 mt-0.5 block">(개인 또는 3~4인 1팀 구성)</span>
+        </div>
+
+        <div class="bg-slate-50/80 border border-slate-200/70 p-4 rounded-xl">
+          <span class="text-xs font-medium text-slate-500 block mb-1">운영 시수</span>
+          <p class="text-base font-bold text-slate-900">3시간 / 6시간 / 12시간</p>
+          <span class="text-xs text-slate-500 mt-0.5 block">(학교 학사일정별 택 1 운영)</span>
+        </div>
+
+        <div class="bg-slate-50/80 border border-slate-200/70 p-4 rounded-xl">
+          <span class="text-xs font-medium text-slate-500 block mb-1">수업 형태</span>
+          <p class="text-base font-bold text-slate-900">이론 20% + 팀 실습 80%</p>
+          <span class="text-xs text-slate-500 mt-0.5 block">(디자인씽킹 프로젝트 기반)</span>
+        </div>
+
+        <div class="bg-slate-50/80 border border-slate-200/70 p-4 rounded-xl">
+          <span class="text-xs font-medium text-slate-500 block mb-1">최종 산출물</span>
+          <p class="text-base font-bold text-blue-600">앱 UI 프로토타입 & IR 피치덱</p>
+          <span class="text-xs text-slate-500 mt-0.5 block">(학생부 연계 진로 포트폴리오)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 1: 기획 의도 및 차별성 -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2.5">
+        <div class="w-1.5 h-5 bg-blue-600 rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-900">기획 의도 및 교육적 차별성</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-1">
+        <!-- 특장점 1 -->
+        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 font-bold flex items-center justify-center text-sm mb-4 border border-blue-100">
+            1
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">교과서 밖 일상의 진짜 문제 발견</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            단순 상상에 머무르지 않고, 학교와 생활 속 사소한 불편함을 포착합니다. 가상 고객(페르소나) 설정과 <strong>5Whys 기법</strong>으로 겉으로 드러난 현상 너머의 근본 원인을 파고듭니다.
+          </p>
+        </div>
+
+        <!-- 특장점 2 -->
+        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 font-bold flex items-center justify-center text-sm mb-4 border border-blue-100">
+            2
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">트리즈(TRIZ)를 통한 생각의 역발상</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            문제 해결 과정의 모순과 타협하지 않습니다. 러시아 천재 과학자의 <strong>4대 분할 원리(시간·공간·조건·부분)</strong>를 적용해 누구나 논리적으로 혁신적인 발명 아이디어를 도출합니다.
+          </p>
+        </div>
+
+        <!-- 특장점 3 -->
+        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 font-bold flex items-center justify-center text-sm mb-4 border border-blue-100">
+            3
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">시각적 MVP 제작 및 모의 투자 설명회</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            아이디어를 실제 눈앞에 구현합니다. 피그마/캔바를 활용한 모바일 앱 UI 프로토타입 제작, <strong>60초 엘리베이터 피치</strong> 및 크라우드 펀딩 투자 배틀로 내 생각의 가치를 증명합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 2: 4대 핵심 실습 파이프라인 (씨마스 워크북 단원 100% 매핑) -->
+    <section class="space-y-4 pt-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+        <div class="flex items-center gap-2.5">
+          <div class="w-1.5 h-5 bg-blue-600 rounded-full"></div>
+          <h3 class="text-xl font-bold text-slate-900">4대 핵심 스타트업 실습 모듈</h3>
+        </div>
+        <span class="text-xs text-slate-500 font-medium">* 씨마스 『창업가정신 워크북』 입문편·실전편 활동 단원과 1:1 완벽 연계</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-1">
+        
+        <!-- 모듈 1 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 bg-sky-50 text-sky-700 text-xs font-bold rounded-md border border-sky-200">모듈 1 · 공감과 관찰</span>
+              <span class="text-xs font-mono text-slate-400">활동 01·02</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">스타트업 팀 빌딩 & 5Whys 문제 정의</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              DISC 행동 유형을 분석하여 CEO(대표), COO(운영), CTO(기술), CMO(마케팅) 역할을 체계적으로 배분하고 팀 헌장을 작성합니다. 주변의 불편함을 관찰하고 가상 고객(페르소나 김지각·나선진)을 설정한 후, 5번의 '왜?'(5Whys)를 통해 진짜 문제를 규명합니다.
+            </p>
+          </div>
+          <div class="bg-slate-50/90 border border-slate-200/80 p-4 rounded-xl text-xs space-y-1.5">
+            <div class="flex items-start gap-1.5 text-slate-700">
+              <span class="font-bold text-slate-900 shrink-0">• 주요 실습:</span>
+              <span>DISC 스타트업 조직도 구성, 페르소나 공감 지도, 5Whys 인과관계 분석</span>
+            </div>
+            <div class="flex items-start gap-1.5 text-blue-700">
+              <span class="font-bold shrink-0">• 최종 산출:</span>
+              <span class="font-semibold">스타트업 팀 헌장, 페르소나 프로필, HMW 질문형 문제 정의서</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 모듈 2 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-md border border-purple-200">모듈 2 · 생각의 역발상</span>
+              <span class="text-xs font-mono text-slate-400">활동 03</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">트리즈(TRIZ) 4대 분할 & 린 캔버스</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              아이폰, 신호등, 지하철 약냉방칸에 숨겨진 트리즈(TRIZ) 발명 원리를 탐색합니다. 문제의 근본적인 모순을 시간 분리, 공간 분리, 조건 분리, 부분·전체 분리의 4가지 기법으로 극복하고, 스캠퍼(SCAMPER)와 결합하여 실현 가능한 1페이지 비즈니스 모델을 수립합니다.
+            </p>
+          </div>
+          <div class="bg-slate-50/90 border border-slate-200/80 p-4 rounded-xl text-xs space-y-1.5">
+            <div class="flex items-start gap-1.5 text-slate-700">
+              <span class="font-bold text-slate-900 shrink-0">• 주요 실습:</span>
+              <span>트리즈 40대 원리 탐색, 퀵트리즈 4대 분할 매트릭스, 스캠퍼 7기법 적용</span>
+            </div>
+            <div class="flex items-start gap-1.5 text-purple-700">
+              <span class="font-bold shrink-0">• 최종 산출:</span>
+              <span class="font-semibold">모순해결 아이디어 기획안, 1페이지 린 캔버스(Lean Canvas)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 모듈 3 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-md border border-amber-200">모듈 3 · 아이디어 실체화</span>
+              <span class="text-xs font-mono text-slate-400">활동 04</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">최소기능제품(MVP) & 모바일 앱 프로토타입</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              드롭박스(Dropbox), 우버(Uber), 에어비앤비(Airbnb)의 초창기 MVP 사례를 학습하며 '시각적 실체화'의 위력을 배웁니다. 소비자의 감성을 사로잡는 브랜드 네이밍과 캐치프레이즈를 짓고, 피그마(Figma)와 캔바(Canva)를 활용해 스마트폰 앱 화면과 홍보 카드뉴스를 완성합니다.
+            </p>
+          </div>
+          <div class="bg-slate-50/90 border border-slate-200/80 p-4 rounded-xl text-xs space-y-1.5">
+            <div class="flex items-start gap-1.5 text-slate-700">
+              <span class="font-bold text-slate-900 shrink-0">• 주요 실습:</span>
+              <span>MVP 핵심 가치 정의, 브랜드 네이밍 기법, 피그마 UI 프로토타이핑, 캔바 카드뉴스</span>
+            </div>
+            <div class="flex items-start gap-1.5 text-amber-700">
+              <span class="font-bold shrink-0">• 최종 산출:</span>
+              <span class="font-semibold">스마트폰 앱 UI 프로토타입 화면, 4~6컷 홍보 카드뉴스 포스터</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 모듈 4 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-md border border-emerald-200">모듈 4 · 가치 증명 & 성장</span>
+              <span class="text-xs font-mono text-slate-400">활동 05·06</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">60초 모의 투자 설명회 & 진로 포트폴리오</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              엘리베이터를 타고 이동하는 1분 안에 투자자를 사로잡는 발표 스킬을 훈련합니다. 와디즈·텀블벅 형식의 크라우드 펀딩 모의 투자 배틀을 진행하고, 갤러리 워크 상호 평가를 통해 프로젝트 전 과정을 성찰하며 학생부 연계 개인 진로 역량 포트폴리오를 작성합니다.
+            </p>
+          </div>
+          <div class="bg-slate-50/90 border border-slate-200/80 p-4 rounded-xl text-xs space-y-1.5">
+            <div class="flex items-start gap-1.5 text-slate-700">
+              <span class="font-bold text-slate-900 shrink-0">• 주요 실습:</span>
+              <span>엘리베이터 피치 발표, 모의 크라우드 펀딩 투자 배틀, 갤러리 워크 피드백</span>
+            </div>
+            <div class="flex items-start gap-1.5 text-emerald-700">
+              <span class="font-bold shrink-0">• 최종 산출:</span>
+              <span class="font-semibold">IR 발표 피치덱, 모의 투자 유치 성과표, 학교생활기록부 연계 포트폴리오</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 섹션 3: 학교 맞춤형 3대 운영 트랙 -->
+    <section class="space-y-4 pt-4">
+      <div class="flex items-center gap-2.5">
+        <div class="w-1.5 h-5 bg-blue-600 rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-900">학교 일정 맞춤형 3대 운영 트랙</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-1">
+        <!-- 트랙 1 -->
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 bg-sky-100 text-sky-800 text-xs font-bold rounded-lg">3시간 코스</span>
+            <span class="text-xs text-slate-400">원데이 입문형</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900">원데이 스타트업 입문반</h4>
+          <p class="text-xs text-slate-500 font-medium">학급 창의적 체험활동, 전일제 진로의 날</p>
+          <p class="text-xs text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
+            창업가 마인드셋 ➔ 생활 속 문제 발굴 ➔ 5Whys 분석 ➔ 트리즈 4대 분할 ➔ 1페이지 린 캔버스 완성
+          </p>
+        </div>
+
+        <!-- 트랙 2 -->
+        <div class="border-2 border-blue-500/80 rounded-2xl p-5 bg-blue-50/20 space-y-3 shadow-sm relative">
+          <span class="absolute -top-3 right-4 px-2 py-0.5 bg-blue-600 text-white text-[11px] font-bold rounded-full shadow-sm">추천 코스</span>
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-lg">6시간 코스</span>
+            <span class="text-xs text-blue-600 font-semibold">실전 집중형</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900">실전 창업 프로젝트 집중반</h4>
+          <p class="text-xs text-slate-500 font-medium">방학 집중 캠프, 주말 토요 창의융합과정</p>
+          <p class="text-xs text-slate-600 leading-relaxed bg-white p-3 rounded-xl border border-blue-100">
+            문제 정의 ➔ 트리즈 역발상 ➔ 피그마/캔바 앱 UI 프로토타입 제작 ➔ 60초 모의 투자 피칭 배틀
+          </p>
+        </div>
+
+        <!-- 트랙 3 -->
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-lg">12시간 코스</span>
+            <span class="text-xs text-slate-400">해커톤 심화형</span>
+          </div>
+          <h4 class="text-base font-bold text-slate-900">청소년 스타트업 해커톤 마스터</h4>
+          <p class="text-xs text-slate-500 font-medium">청소년 비즈쿨 동아리, 창업·IT 심화 동아리</p>
+          <p class="text-xs text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
+            전 과정 완주 ➔ 대한민국 청소년 창업경진대회 출품 기획안 완성 ➔ 학생부 기재 연계 포트폴리오
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 4: 학생 참가 혜택 및 신청 안내 -->
+    <section class="space-y-4 pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-2.5">
+        <div class="w-1.5 h-5 bg-blue-600 rounded-full"></div>
+        <h3 class="text-xl font-bold text-slate-900">참가 학생 혜택 및 신청 안내</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-1">
+        <!-- 혜택 카드 -->
+        <div class="bg-gradient-to-br from-blue-50/50 to-indigo-50/30 border border-blue-200/80 rounded-2xl p-6 space-y-3">
+          <h4 class="text-base font-bold text-blue-900 flex items-center gap-2">
+            <span>🏆</span> 참가 학생 3대 스페셜 특전
+          </h4>
+          <ul class="text-sm text-slate-700 space-y-2.5 pt-1 leading-relaxed">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 font-bold">1.</span>
+              <span><strong>학교생활기록부(창체·진로) 기재 연계</strong> 개인 창의융합 역량 포트폴리오 100% 완성</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 font-bold">2.</span>
+              <span>교육부·17개 시도교육청 주최 <strong>『대한민국 청소년 창업경진대회』</strong> 출품 연계 멘토링</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 font-bold">3.</span>
+              <span>YEEP 기반 <strong>창업가정신 4대 핵심 역량 진단</strong>(가치창출·도전·자기주도·집단창의) 및 씨마스 공식 수료증 발급</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 신청 안내 카드 -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-3">
+          <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span>📋</span> 캠프 신청 및 교육 환경
+          </h4>
+          <ul class="text-xs sm:text-sm text-slate-600 space-y-2 pt-1 leading-relaxed">
+            <li><strong>• 참가 대상 :</strong> 창업, 기획, 아이디어, 디자인에 관심 있는 중·고등학생 누구나</li>
+            <li><strong>• 모집 인원 :</strong> 기수별 25~30명 내외 (선착순 마감)</li>
+            <li><strong>• 준비 사항 :</strong> 적극적인 참여 열정, 필기도구 (노트북/태블릿 지참 권장)</li>
+            <li><strong>• 교재 지원 :</strong> 씨마스 『창업가정신 워크북』 입문편·실전편 전원 제공</li>
+            <li><strong>• 접수 및 문의 :</strong> 교내 진로상담실 또는 씨마스 연수 담당자 문의</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 단일 공식 푸터 (중복 제거 및 요청 서식 1:1 단일 반영) -->
+    <footer class="pt-8 border-t border-slate-100 text-center space-y-2">
+      <p class="text-sm sm:text-base font-bold text-slate-800 tracking-tight">
+        운영 주체: 주식회사 씨마스 | 연수 일정 조율 및 세부 문의: 조경수 차장 (☎ 02-2274-1590 내선 163 | ✉ 122cks@cmass21.co.kr)
+      </p>
+      <p class="text-xs sm:text-sm text-slate-500 font-medium">
+        ※ 본 페이지 상단의 [공문 인쇄 / PDF] 버튼을 누르면 정식 인쇄물 규격으로 출력됩니다.
+      </p>
+      <p class="text-[11px] text-slate-400 pt-2">
+        © 2026 CMASS Inc. & Student Entrepreneurship Program. All rights reserved.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- 카카오톡 / 메신저 공유 문구 복사 모달 -->
+  <div id="shareModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between">
+        <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <span>💬</span> 메신저 / 단톡방 공유 문구
+        </h4>
+        <button onclick="closeShareModal()" class="text-slate-400 hover:text-slate-600 text-lg font-bold">✕</button>
+      </div>
+
+      <textarea id="shareText" readonly class="w-full h-64 p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-700 leading-relaxed focus:outline-none resize-none font-sans">
+[제안] 2026 학생 대상 진로 캠프 프로그램 제안서
+- 청소년 창업가정신 실전 캠프: 생활 속 혁신 프로젝트
+
+불편함을 기회로 바꾸는 생각의 역발상!
+씨마스 『창업가정신 워크북』 프로세스를 기반으로 일상 속 문제 발견부터 MVP 제작, 모의 투자 설명회까지 완주하는 학생 주도형 실전 스타트업 캠프 제안서입니다.
+
+■ 주요 교육 내용 (4대 스타트업 파이프라인)
+1. 스타트업 팀 빌딩 & 5Whys 진짜 문제 정의
+2. 트리즈(TRIZ) 4대 분할 발상 & 린 캔버스
+3. 최소기능제품(MVP) & 모바일 앱 UI 프로토타입
+4. 60초 엘리베이터 피치 & 크라우드 펀딩 모의 투자 배틀
+
+■ 학생 참가 특전
+- 학교생활기록부(창체·진로) 연계 개인 진로 역량 포트폴리오 완성
+- 『대한민국 청소년 창업경진대회』 출품 연계 멘토링
+- YEEP 창업가정신 4대 핵심 역량 진단 & 씨마스 수료증 발급
+- 교재(씨마스 워크북 입문/실전편) 전원 무료 제공
+
+운영 주체: 주식회사 씨마스 | 연수 일정 조율 및 세부 문의: 조경수 차장 (☎ 02-2274-1590 내선 163 | ✉ 122cks@cmass21.co.kr)
+※ 본 페이지 상단의 [공문 인쇄 / PDF] 버튼을 누르면 정식 인쇄물 규격으로 출력됩니다.</textarea>
+
+      <div class="flex items-center justify-end gap-2 pt-2">
+        <button onclick="closeShareModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-lg">닫기</button>
+        <button onclick="copyShareText()" class="px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm">문구 복사하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 토스트 알림 메시지 박스 -->
+  <div id="toastBox" class="fixed bottom-6 bg-slate-900 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl shadow-xl transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none z-50">
+    알림 메시지
+  </div>
+
+  <script>
+    function openShareModal() {
+      document.getElementById("shareModal").classList.remove("hidden");
+    }
+
+    function closeShareModal() {
+      document.getElementById("shareModal").classList.add("hidden");
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toastBox");
+      toast.textContent = message;
+      toast.classList.remove("translate-y-20", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+      setTimeout(() => {
+        toast.classList.remove("translate-y-0", "opacity-100");
+        toast.classList.add("translate-y-20", "opacity-0");
+      }, 2500);
+    }
+
+    function copyShareText() {
+      const textArea = document.getElementById("shareText");
+      textArea.select();
+      textArea.setSelectionRange(0, 99999);
+      
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showToast("📋 메신저 공유 문구가 클립보드에 복사되었습니다!");
+          closeShareModal();
+        } else {
+          showToast("복사에 실패했습니다. 직접 텍스트를 복사해주세요.");
+        }
+      } catch (err) {
+        showToast("클립보드 복사 기능을 지원하지 않는 환경입니다.");
+      }
+    }
+  </script>
+</body>
+</html>
